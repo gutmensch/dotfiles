@@ -41,4 +41,7 @@ colorscheme dracula
 source ~/.config/nvim/coc.vim
 
 " --- TODO
+" https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
+" https://randomgeekery.org/config/init.lua/
+" https://github.com/nvim-neorg/neorg
 " https://medium.com/geekculture/neovim-configuration-for-beginners-b2116dbbde84
