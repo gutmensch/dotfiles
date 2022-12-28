@@ -49,7 +49,11 @@ end
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
-vim.g.node_host_prog = "/Users/folke/.pnpm-global/5/node_modules/neovim/bin/cli.js"
+if vim.loop.os_uname().sysname == "Linux" then
+  vim.g.node_host_prog = "/usr/lib/node_modules/neovim/bin/cli.js"
+else
+  vim.g.node_host_prog = "_enter_mac_path_"
+end
 vim.opt.autowrite = true -- enable auto write
 vim.opt.clipboard = "unnamedplus" -- sync with system clipboard
 -- vim.opt.concealcursor = "nc" -- Hide * markup for bold and italic
