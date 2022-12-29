@@ -50,9 +50,11 @@ end
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 if vim.loop.os_uname().sysname == "Linux" then
+  -- sudo npm i -g neovim
   vim.g.node_host_prog = "/usr/lib/node_modules/neovim/bin/cli.js"
 else
-  vim.g.node_host_prog = "_enter_mac_path_"
+  -- npm i neovim
+  vim.g.node_host_prog = "%HOME%/workspace/node_modules/neovim/bin/cli.js"
 end
 vim.opt.autowrite = true -- enable auto write
 vim.opt.clipboard = "unnamedplus" -- sync with system clipboard
