@@ -10,6 +10,6 @@ vim.api.nvim_create_autocmd("User", {
   callback = function()
     util.version()
     require("config.commands")
-    --    require("config.mappings")
+    require("config.mappings-simple")
   end,
 })
