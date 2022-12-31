@@ -14,6 +14,16 @@ return {
   { "folke/neoconf.nvim", cmd = "Neoconf" },
 
   {
+    "google/vim-jsonnet",
+    enabled = true,
+    lazy = true,
+    event = {
+      "BufReadPre *.jsonnet",
+      "BufReadPre *.libsonnet",
+    },
+  },
+
+  {
     "smjonas/inc-rename.nvim",
     cmd = "IncRename",
     config = function()
