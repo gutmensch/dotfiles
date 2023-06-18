@@ -7,7 +7,7 @@ return {
   "nvim-lua/plenary.nvim",
   "windwp/nvim-spectre",
   "rlch/github-notifications.nvim",
-  "folke/twilight.nvim",
+  -- "folke/twilight.nvim",
   "folke/which-key.nvim",
   "folke/tokyonight.nvim",
   "folke/neodev.nvim",
@@ -45,16 +45,16 @@ return {
     end,
   },
 
-  {
-    "folke/drop.nvim",
-    event = "VimEnter",
-    enabled = true,
-    config = function()
-      math.randomseed(os.time())
-      local theme = ({ "gopher" })[math.random(1, 3)]
-      require("drop").setup({ theme = theme })
-    end,
-  },
+  --   {
+  --     "folke/drop.nvim",
+  --     event = "VimEnter",
+  --     enabled = true,
+  --     config = function()
+  --       math.randomseed(os.time())
+  --       local theme = ({ "gopher" })[math.random(1, 3)]
+  --       require("drop").setup({ theme = theme })
+  --     end,
+  --   },
 
   { "shaunsingh/oxocarbon.nvim", lazy = false, enabled = true },
 

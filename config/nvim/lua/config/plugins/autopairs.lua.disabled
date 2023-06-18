@@ -1,4 +1,6 @@
 return {
+  "nvim-autopairs",
+
   enabled = false,
 
   config = function()
