@@ -1,0 +1,27 @@
+session_name: default
+windows:
+  - window_name: nvim
+    panes:
+      - shell_command:
+          - nvim -c ":Neotree ~/sandbox/"
+  - window_name: ssh-queen1
+    panes:
+      - focus: true
+        shell_command:
+          - ssh queen1
+      - shell_command:
+          - ssh drone1.borg.kubectl.me
+  - window_name: joplin
+    panes:
+      - shell_command:
+          - $HOME/.joplin-bin/bin/joplin
+  - window_name: music
+    #layout: main-horizontal
+    #options:
+    #  main-pane-height: 20
+    panes:
+      - focus: true
+        shell_command:
+          - ncmpcpp -h qnaps
+      - shell_command:
+          - while true; do mplayer http://qnaps:8800; sleep 3; done

@@ -11,6 +11,7 @@ function M.config()
     timeout = 3000,
     level = vim.log.levels.INFO,
     fps = 20,
+    background_colour = "#CCCCCC",
     max_height = function()
       return math.floor(vim.o.lines * 0.75)
     end,
