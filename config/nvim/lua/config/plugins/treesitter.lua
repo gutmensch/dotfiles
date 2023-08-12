@@ -34,7 +34,7 @@ function M.config()
       "gitignore",
       "go",
       "graphql",
-      "help",
+      -- "help",
       "html",
       "http",
       "java",
